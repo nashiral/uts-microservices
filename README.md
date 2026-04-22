@@ -1,22 +1,55 @@
-[# UTS Microservices - ActiveMQ
+# UTS Microservices - ActiveMQ
 
-## Teknologi
-- Node.js
-- ActiveMQ
-- STOMP Protocol
+## 📌 Deskripsi
 
-## Cara Menjalankan
+Project ini merupakan implementasi arsitektur microservices menggunakan message queue (ActiveMQ) untuk sistem notifikasi pendaftaran akun.
 
-1. Jalankan ActiveMQ
-2. Jalankan Producer: node app.js
-3. Jalankan Consumer: node worker.js
+## ⚙️ Teknologi
 
-## Endpoint
+* Node.js
+* ActiveMQ
+* STOMP Protocol
+
+## 🧩 Arsitektur
+
+* Producer (User Registration)
+* Consumer (Notification Worker)
+* Message Broker (ActiveMQ)
+
+## 🚀 Cara Menjalankan
+
+### 1. Jalankan ActiveMQ
+
+* Jalankan `activemq.bat`
+* Akses: http://localhost:8161
+
+### 2. Jalankan Producer
+
+```bash
+cd producer
+node app.js
+```
+
+### 3. Jalankan Consumer
+
+```bash
+cd consumer
+node worker.js
+```
+
+## 📡 Endpoint
+
 POST /register
 
-## Queue
+## 📬 Queue
+
 registration_queue
 
-## Skenario Uji
-- Async test ✔
-- Resilience ✔](https://github.com/nashiral/uts-microservices/blob/main/README.md)
+## 🧪 Skenario Pengujian
+
+* Asynchronous test (consumer dimatikan)
+* Resilience test (consumer dinyalakan kembali)
+
+## 🎥 Video Demo
+
+()
