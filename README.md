@@ -52,4 +52,4 @@ registration_queue
 
 ## 🎥 Video Demo
 
-()
+(https://drive.google.com/file/d/1lIdu0yOFIcy95bZm5hxY9ayKNQmNNp04/view?usp=drive_link)
